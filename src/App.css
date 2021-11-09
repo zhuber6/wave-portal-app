@@ -3,6 +3,7 @@
   justify-content: center;
   width: 100%;
   margin-top: 64px;
+  background-color: #28a050;
 }
 
 .dataContainer {
@@ -20,8 +21,14 @@
 
 .bio {
   text-align: center;
-  color: gray;
+  color: rgb(176, 221, 12);
   margin-top: 16px;
+}
+
+.sub-text {
+    font-size: 25px;
+    color: white;
+    text-align: center;
 }
 
 .waveButton {
