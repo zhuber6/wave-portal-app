@@ -11,7 +11,7 @@ const App = () => {
   /**
   * Create a variable here that holds the contract address after you deploy!
   */
-  const contractAddress = "0x31112FF987957Bd690588f1510ae1A3aC21cED31";
+  const contractAddress = "0x58D82f75a428Cb8b5510f5fbaD70898AaF006E42";
   const contractABI = waveportaljson.abi
   
   const checkIfWalletIsConnected = async () => {
