@@ -11,7 +11,7 @@ const App = () => {
   /**
   * Create a variable here that holds the contract address after you deploy!
   */
-  const contractAddress = "0x8e07dEFE9940A4eDb349b4097E19b2b033175bae";
+  const contractAddress = "0x31112FF987957Bd690588f1510ae1A3aC21cED31";
   const contractABI = waveportaljson.abi
   
   const checkIfWalletIsConnected = async () => {
@@ -75,6 +75,13 @@ const App = () => {
         console.log("Mined -- ", waveTxn.hash);
 
         getAllWaves();
+
+        let contractBalance = await provider.getBalance(wavePortalContract.address);
+        console.log(
+          'Contract balance:',
+          ethers.utils.formatEther(contractBalance)
+        );
+
       } else {
         console.log("Ethereum object doesn't exist!");
       }
